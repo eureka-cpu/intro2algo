@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "insertion_sort"
+name = "intro2algo"
 version = "0.1.0"
