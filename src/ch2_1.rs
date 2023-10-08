@@ -1,4 +1,4 @@
-//! Chapter 2.1 Insertion Sort
+//! Chapter 2.1 Insertion Sort, Linear Search & Binary Addition
 //!
 //! The pseudo-code for the insertion sort function from the book is as follows:
 //! INSERTION-SORT(A, n)
@@ -149,14 +149,13 @@ where
 ///         }
 ///     }
 /// }
-/// sum.insert(0, c);
+/// sum.insert(0, c); // insert the overflow
 ///
 /// sum
 fn add_binary_integers(a: &[u8], b: &[u8], n: usize) -> Vec<u8> {
     let mut sum: Vec<u8> = Vec::with_capacity(n + 1);
-    let i = n - 1;
     let mut c = 0;
-    for i in (0..=i).rev() {
+    for i in (0..n).rev() {
         let x = a[i] + b[i];
         if c == 1 {
             if x == 0 {

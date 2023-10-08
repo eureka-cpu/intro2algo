@@ -4,4 +4,4 @@
 //! based on what I could find available online for free.
 #![allow(dead_code)]
 
-mod insertion_sort;
+mod ch2_1;
